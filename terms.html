@@ -3,525 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinsCam AI - Terms and Conditions</title>
-    <!-- Google Fonts for premium typography -->
+    <title>Terms &amp; Conditions — Scan &amp; Explain</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #4f46e5; /* Indigo 600 */
-            --primary-hover: #4338ca;
-            --bg-color: #f8fafc; /* Slate 50 */
-            --text-main: #334155; /* Slate 700 */
-            --text-muted: #64748b; /* Slate 500 */
-            --heading-color: #0f172a; /* Slate 900 */
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
+            --bg: #09090b;
+            --card: #18181b;
+            --text: #fafafa;
+            --muted: #a1a1aa;
+            --accent: #3b82f6;
+            --border: #27272a;
         }
-
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
             line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
+            padding: 24px 16px 48px;
         }
-
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .policy-card {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-            padding: 48px;
-            border: 1px solid var(--border-color);
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 48px;
-            padding-bottom: 32px;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        header h1 {
-            color: var(--heading-color);
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-            letter-spacing: -0.02em;
-        }
-
-        .effective-date {
-            display: inline-block;
-            background-color: #eef2ff;
-            color: var(--primary-color);
-            padding: 6px 16px;
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card);
+            border: 1px solid var(--border);
             border-radius: 20px;
-            font-size: 0.875rem;
+            padding: 36px 28px;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .effective-date {
+            font-size: 14px;
+            color: var(--accent);
             font-weight: 500;
         }
-
         .intro {
-            font-size: 1.1rem;
-            color: var(--text-main);
-            margin-bottom: 40px;
+            margin-bottom: 28px;
         }
-
-        .intro p {
-            margin-bottom: 16px;
-        }
-
         section {
-            margin-bottom: 40px;
+            margin-bottom: 28px;
         }
-
         h2 {
-            color: var(--heading-color);
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: baseline;
-            gap: 12px;
-            text-transform: uppercase;
-        }
-
-        .section-number {
-            color: var(--primary-color);
-            font-size: 1.1rem;
+            font-size: 17px;
             font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+            letter-spacing: -0.2px;
         }
-
+        h2 span {
+            color: var(--accent);
+            margin-right: 6px;
+        }
         p {
-            margin-bottom: 16px;
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 12px;
         }
-
-        p:last-child {
+        strong {
+            color: var(--text);
+        }
+        ul {
+            margin: 8px 0 14px 20px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .contact-box {
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-top: 12px;
+        }
+        .contact-box p {
+            margin-bottom: 6px;
+        }
+        .contact-box p:last-child {
             margin-bottom: 0;
         }
-
-        ul {
-            margin-top: 12px;
-            margin-bottom: 20px;
-            padding-left: 24px;
-            list-style-type: none;
-        }
-
-        ul li {
-            position: relative;
-            margin-bottom: 8px;
-            padding-left: 12px;
-        }
-
-        ul li::before {
-            content: "•";
-            color: var(--primary-color);
-            font-weight: bold;
-            position: absolute;
-            left: -12px;
-            font-size: 1.2rem;
-            line-height: 1.5;
-        }
-
-        .contact-box {
-            background-color: #f8fafc;
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 24px;
-            margin-top: 24px;
-        }
-
-        .contact-box p {
-            margin-bottom: 8px;
-        }
-        
-        .contact-box a {
-            color: var(--primary-color);
+        a {
+            color: var(--accent);
             text-decoration: none;
-            font-weight: 500;
         }
-
-        .contact-box a:hover {
+        a:hover {
             text-decoration: underline;
         }
-
         footer {
+            max-width: 820px;
+            margin: 24px auto 0;
             text-align: center;
-            margin-top: 40px;
-            color: var(--text-muted);
-            font-size: 0.875rem;
+            font-size: 13px;
+            color: var(--muted);
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .container {
-                margin: 20px auto;
+                padding: 24px 18px;
             }
-
-            .policy-card {
-                padding: 32px 20px;
-                border-radius: 12px;
-            }
-
-            header h1 {
-                font-size: 2rem;
+            h1 {
+                font-size: 24px;
             }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <div class="policy-card">
-            <header>
-                <h1>Terms and Conditions</h1>
-                <div class="effective-date">Effective Date: August 15, 2026</div>
-            </header>
+        <header>
+            <h1>Terms and Conditions</h1>
+            <div class="effective-date">Effective Date: November 19, 2026</div>
+        </header>
 
-            <div class="intro">
-                <p>These Terms and Conditions ("Terms", "Terms of Use") govern your use of the LinsCam AI mobile application ("LinsCam AI", "App", "we", "us", or "our").</p>
-                <p><strong>By downloading, accessing, or using LinsCam AI, you agree to these Terms and our Privacy Policy. If you do not agree with these Terms, please do not use the App.</strong></p>
-            </div>
-
-            <section>
-                <h2><span class="section-number">1.</span> ABOUT LINSCAM AI</h2>
-                <p>LinsCam AI is an AI-powered image understanding application that allows users to upload or select images and receive AI-generated explanations, analysis, checks, or other information based on the selected image.</p>
-                <p>The App is provided for informational and general-purpose assistance.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">2.</span> ACCEPTANCE OF THESE TERMS</h2>
-                <p>By using LinsCam AI, you confirm that:</p>
-                <ul>
-                    <li>You have read and understood these Terms.</li>
-                    <li>You agree to comply with these Terms and applicable laws.</li>
-                    <li>You will use the App only for lawful and responsible purposes.</li>
-                    <li>You will not misuse the App or attempt to interfere with its operation.</li>
-                </ul>
-                <p>If you do not agree with any part of these Terms, you must stop using the App.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">3.</span> IMAGE UPLOADS AND USER CONTENT</h2>
-                <p>LinsCam AI allows you to select and submit images for AI analysis.</p>
-                <p>You are responsible for the images and other information you choose to submit through the App.</p>
-                <p>You confirm that you have the necessary rights or authorization to submit an image for processing.</p>
-                <p>You must not knowingly submit content that:</p>
-                <ul>
-                    <li>Violates another person's privacy or rights.</li>
-                    <li>Infringes copyright, trademark, or other intellectual-property rights.</li>
-                    <li>Contains illegal content.</li>
-                    <li>Facilitates fraud, scams, or deception.</li>
-                    <li>Exploits or harms children.</li>
-                    <li>Contains malicious software or harmful technical content.</li>
-                    <li>Is intended to harass, threaten, abuse, or harm another person.</li>
-                    <li>Violates applicable laws or regulations.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2><span class="section-number">4.</span> DO NOT SUBMIT SENSITIVE INFORMATION</h2>
-                <p>LinsCam AI is not intended to be used as a secure storage service for confidential information.</p>
-                <p>You should avoid uploading images containing:</p>
-                <ul>
-                    <li>Passwords</li>
-                    <li>Authentication codes</li>
-                    <li>Bank account information</li>
-                    <li>Payment-card information</li>
-                    <li>Government identification documents</li>
-                    <li>Private conversations</li>
-                    <li>Medical records</li>
-                    <li>Personal addresses</li>
-                    <li>Sensitive information belonging to another person</li>
-                    <li>Sensitive information relating to children</li>
-                </ul>
-                <p>You are responsible for deciding whether an image is appropriate to submit.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">5.</span> USER CONFIRMATION</h2>
-                <p>Before an image is processed, LinsCam AI may ask you to confirm that the image does not contain personal or sensitive information, or that you understand the risks of submitting such information.</p>
-                <p>This confirmation is intended to inform you and does not guarantee that an image contains no personal information.</p>
-                <p>If you knowingly submit an image containing personal or sensitive information, you are responsible for that decision.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">6.</span> AI-GENERATED RESPONSES</h2>
-                <p>LinsCam AI uses artificial intelligence to analyze submitted images and generate responses.</p>
-                <p>AI-generated responses may be:</p>
-                <ul>
-                    <li>Incorrect</li>
-                    <li>Incomplete</li>
-                    <li>Outdated</li>
-                    <li>Misinterpreted</li>
-                    <li>Missing important context</li>
-                    <li>Inappropriate in certain circumstances</li>
-                </ul>
-                <p>You should independently verify important information before relying on it.</p>
-                <p>LinsCam AI does not guarantee the accuracy, completeness, reliability, or suitability of any AI-generated response.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">7.</span> NO PROFESSIONAL ADVICE</h2>
-                <p>LinsCam AI is not a substitute for qualified professional advice.</p>
-                <p>AI-generated responses must not be treated as professional:</p>
-                <ul>
-                    <li>Medical advice</li>
-                    <li>Legal advice</li>
-                    <li>Financial or investment advice</li>
-                    <li>Security advice</li>
-                    <li>Mental-health advice</li>
-                    <li>Technical professional advice</li>
-                    <li>Emergency advice</li>
-                </ul>
-                <p>For important decisions, consult an appropriately qualified professional.</p>
-                <p>If you believe you are experiencing an emergency, contact the appropriate emergency service or qualified professional instead of relying on an AI response.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">8.</span> THIRD-PARTY AI SERVICES</h2>
-                <p>LinsCam AI may use third-party artificial intelligence services, including Google or other service providers, to process images and generate responses.</p>
-                <p>By using the AI analysis functionality, you understand that the information required to provide the requested functionality may be transmitted to the applicable service provider.</p>
-                <p>Third-party services may have their own terms, policies, and technical limitations.</p>
-                <p>Your use of LinsCam AI remains subject to these Terms and the applicable policies of the third-party services where relevant.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">9.</span> ADVERTISING</h2>
-                <p>LinsCam AI may display advertisements provided by third-party advertising services, including Google AdMob.</p>
-                <p>Advertisements may be displayed within or around the App.</p>
-                <p>Third-party advertising services may process information according to their own policies and applicable settings.</p>
-                <p>LinsCam AI does not sell uploaded images to advertisers.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">10.</span> REWARDED ADS AND SCAN CREDITS</h2>
-                <p>LinsCam AI may provide additional scan credits or similar in-app benefits after a user successfully completes an eligible rewarded advertisement.</p>
-                <p>Reward availability may depend on:</p>
-                <ul>
-                    <li>Advertisement availability</li>
-                    <li>Network connectivity</li>
-                    <li>Ad provider behavior</li>
-                    <li>Device conditions</li>
-                    <li>App configuration</li>
-                    <li>Applicable advertising policies</li>
-                </ul>
-                <p>Rewards are not guaranteed to be available at all times.</p>
-                <p>Users must not attempt to manipulate, automate, exploit, or fraudulently interact with advertisements to obtain rewards.</p>
-                <p>We may restrict or remove rewards obtained through suspected abuse, manipulation, or technical exploitation.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">11.</span> FAIR USE</h2>
-                <p>You agree to use LinsCam AI normally and fairly.</p>
-                <p>You must not:</p>
-                <ul>
-                    <li>Attempt to bypass scan limits.</li>
-                    <li>Attempt to obtain unlimited scans through technical manipulation.</li>
-                    <li>Modify or reverse engineer the App for the purpose of bypassing restrictions.</li>
-                    <li>Interfere with advertisements or reward systems.</li>
-                    <li>Abuse APIs or backend services.</li>
-                    <li>Attempt to overload or disrupt our infrastructure.</li>
-                    <li>Use automated systems to abuse the App.</li>
-                    <li>Attempt to gain unauthorized access to the App or its backend.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2><span class="section-number">12.</span> PROHIBITED USE</h2>
-                <p>You must not use LinsCam AI to:</p>
-                <ul>
-                    <li>Facilitate criminal activity.</li>
-                    <li>Create or facilitate fraud or scams.</li>
-                    <li>Deceive or impersonate people.</li>
-                    <li>Harass, threaten, or abuse others.</li>
-                    <li>Exploit, abuse, or endanger children.</li>
-                    <li>Process or distribute illegal content.</li>
-                    <li>Create malicious code or facilitate cyber abuse.</li>
-                    <li>Circumvent security systems.</li>
-                    <li>Violate another person's privacy.</li>
-                    <li>Infringe intellectual-property rights.</li>
-                    <li>Generate or facilitate content prohibited by applicable law or Google Play policies.</li>
-                    <li>Use the App in a manner that could cause harm to another person.</li>
-                </ul>
-                <p>We may restrict access to the App where reasonably necessary to protect users, our services, or third parties.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">13.</span> CHILD SAFETY</h2>
-                <p>LinsCam AI does not intentionally request children to provide personal information for its core functionality.</p>
-                <p>Users must not upload sensitive information belonging to children.</p>
-                <p>LinsCam AI does not permit the use of the App to create, process, facilitate, or distribute content involving child exploitation or abuse.</p>
-                <p>Any content involving child sexual exploitation or abuse is strictly prohibited.</p>
-                <p>We may take appropriate action when prohibited content or abuse is identified or reported.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">14.</span> PRIVACY</h2>
-                <p>Your use of LinsCam AI is also governed by our Privacy Policy.</p>
-                <p>Our Privacy Policy explains how information, including images submitted for AI processing and information associated with advertising services, may be processed.</p>
-                <p><strong>Privacy Policy:</strong> <a href="[YOUR PRIVACY POLICY URL]">[YOUR PRIVACY POLICY URL]</a></p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">15.</span> IMAGE AND INTELLECTUAL PROPERTY RIGHTS</h2>
-                <p>You retain ownership of images and other content that you own and submit to LinsCam AI.</p>
-                <p>By submitting content, you grant LinsCam AI and the service providers necessary to operate the App a limited permission to process that content solely as reasonably necessary to provide the requested functionality, subject to our Privacy Policy and applicable third-party terms.</p>
-                <p>You must not submit content that you do not have permission to use or process.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">16.</span> APP OWNERSHIP</h2>
-                <p>The LinsCam AI App, including its original design, branding, interface, software, graphics, logos, text, and other original materials, is owned by LINS IO or its applicable licensors unless otherwise stated.</p>
-                <p>You may use the App only for its intended purpose.</p>
-                <p>You may not copy, reproduce, redistribute, sell, modify, reverse engineer, or create derivative works from the App or its proprietary components except where permitted by applicable law.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">17.</span> THIRD-PARTY SERVICES</h2>
-                <p>The App may depend on third-party services and infrastructure. These may include:</p>
-                <ul>
-                    <li>Google Play services</li>
-                    <li>Google AdMob</li>
-                    <li>Google AI services</li>
-                    <li>Cloud or backend infrastructure</li>
-                    <li>Android system services</li>
-                </ul>
-                <p>Third-party services may become temporarily unavailable or may change their functionality without notice.</p>
-                <p>We are not responsible for independent failures, outages, policy changes, or actions of third-party services.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">18.</span> AVAILABILITY</h2>
-                <p>We aim to keep LinsCam AI available and functional, but we do not guarantee uninterrupted availability.</p>
-                <p>The App may temporarily become unavailable because of:</p>
-                <ul>
-                    <li>Maintenance</li>
-                    <li>Server problems</li>
-                    <li>AI service outages</li>
-                    <li>Advertising service outages</li>
-                    <li>Network problems</li>
-                    <li>Device limitations</li>
-                    <li>Security issues</li>
-                    <li>Third-party service changes</li>
-                    <li>Other circumstances beyond our reasonable control</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2><span class="section-number">19.</span> UPDATES AND CHANGES</h2>
-                <p>We may update, modify, add, or remove features from LinsCam AI at any time.</p>
-                <p>Features such as scan limits, rewarded advertisements, AI models, supported languages, history functionality, or available analysis options may change over time.</p>
-                <p>We may also release updates required for security, compatibility, performance, or policy compliance.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">20.</span> SUSPENSION OR TERMINATION</h2>
-                <p>We may restrict, suspend, or terminate access to LinsCam AI if we reasonably believe that a user:</p>
-                <ul>
-                    <li>Violates these Terms.</li>
-                    <li>Abuses the App.</li>
-                    <li>Attempts to bypass technical restrictions.</li>
-                    <li>Manipulates advertisements or rewards.</li>
-                    <li>Attempts unauthorized access.</li>
-                    <li>Uses the App for unlawful or harmful purposes.</li>
-                    <li>Creates a security or safety risk.</li>
-                </ul>
-                <p>Where appropriate, we may take action without prior notice.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">21.</span> DISCLAIMER</h2>
-                <p>LinsCam AI is provided on an "as available" and "as is" basis to the extent permitted by applicable law.</p>
-                <p>We do not guarantee that:</p>
-                <ul>
-                    <li>The App will always be available.</li>
-                    <li>AI responses will always be accurate.</li>
-                    <li>AI analysis will identify every detail in an image.</li>
-                    <li>AI-generated information will be suitable for every situation.</li>
-                    <li>Third-party services will always function without interruption.</li>
-                    <li>Every uploaded image will be interpreted correctly.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2><span class="section-number">22.</span> LIMITATION OF LIABILITY</h2>
-                <p>To the maximum extent permitted by applicable law, LINS IO and LinsCam AI shall not be liable for indirect, incidental, special, consequential, or similar damages arising from or related to the use or inability to use the App.</p>
-                <p>This includes reliance on AI-generated information, third-party service interruptions, inaccurate analysis, or user-submitted content.</p>
-                <p>Nothing in these Terms is intended to exclude or limit liability where such exclusion or limitation is prohibited by applicable law.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">23.</span> USER RESPONSIBILITY FOR AI RESULTS</h2>
-                <p>You are responsible for deciding whether an AI-generated response is appropriate for your situation.</p>
-                <p>For high-impact decisions, you should verify important information using reliable sources or qualified professionals.</p>
-                <p>LinsCam AI does not guarantee that an AI response is factually correct merely because it is generated by an AI system.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">24.</span> REPORTING PROBLEMS OR HARMFUL OUTPUT</h2>
-                <p>If you encounter an inappropriate, harmful, offensive, or potentially unsafe AI response, you should use any reporting or feedback functionality provided within the App or contact us through the contact information below.</p>
-                <p>We may review reports to improve safety, reliability, and the user experience.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">25.</span> CHANGES TO THESE TERMS</h2>
-                <p>We may update these Terms from time to time.</p>
-                <p>When material changes are made, the updated Terms will be made available through the App or our official website.</p>
-                <p>Your continued use of LinsCam AI after the updated Terms become effective constitutes acceptance of the updated Terms, to the extent permitted by applicable law.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">26.</span> GOVERNING LAW</h2>
-                <p>These Terms shall be interpreted in accordance with the applicable laws of India, subject to any mandatory consumer-protection or other rights that cannot legally be excluded.</p>
-                <p>Any dispute shall be subject to the jurisdiction of the courts having appropriate jurisdiction under applicable law.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">27.</span> SEVERABILITY</h2>
-                <p>If any provision of these Terms is found to be invalid, unlawful, or unenforceable, that provision will be interpreted or limited to the minimum extent necessary, and the remaining provisions will continue to apply.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">28.</span> ENTIRE AGREEMENT</h2>
-                <p>These Terms, together with the LinsCam AI Privacy Policy and any additional terms presented within the App for specific features, constitute the agreement governing your use of LinsCam AI.</p>
-            </section>
-
-            <section>
-                <h2><span class="section-number">29.</span> CONTACT US</h2>
-                <p>If you have questions, concerns, or requests regarding these Terms or LinsCam AI, contact us at:</p>
-                
-                <div class="contact-box">
-                    <p><strong>Developer / Company:</strong> LINS IO</p>
-                    <p><strong>App:</strong> LinsCam AI</p>
-                    <p><strong>Email:</strong> <a href="mailto:linsio.official@gmail.com">linsio.official@gmail.com</a></p>
-                    <p><strong>Website:</strong> <a href="https://Linsio.site" target="_blank" rel="noopener noreferrer">https://Linsio.site</a></p>
-                </div>
-            </section>
-
-            <section>
-                <h2><span class="section-number">30.</span> ACCEPTANCE</h2>
-                <p><strong>By continuing to use LinsCam AI, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.</strong></p>
-            </section>
+        <div class="intro">
+            <p>These Terms and Conditions ("Terms") govern your use of the <strong>Scan &amp; Explain</strong> (formerly LinsCam AI) mobile application ("App"), developed and operated by <strong>LINS IO</strong> ("we", "us", or "our").</p>
+            <p><strong>By downloading, accessing, or using Scan &amp; Explain, you agree to these Terms and our Privacy Policy. If you do not agree, please do not use the App.</strong></p>
         </div>
-        
-        <footer>
-            <p>&copy; 2026 LINS IO. All rights reserved.</p>
-        </footer>
+
+        <section>
+            <h2><span>1.</span> ABOUT SCAN &amp; EXPLAIN</h2>
+            <p>Scan &amp; Explain is an AI-powered image understanding utility that allows users to upload images and receive structured explanations—including Medicine Check, Scam Check, Document Summary, and General Scan.</p>
+            <p>The App is provided strictly for general informational and convenience purposes.</p>
+        </section>
+
+        <section>
+            <h2><span>2.</span> ACCEPTANCE OF THESE TERMS</h2>
+            <p>By using Scan &amp; Explain, you confirm that:</p>
+            <ul>
+                <li>You have read and understood these Terms.</li>
+                <li>You agree to comply with these Terms and all applicable laws.</li>
+                <li>You will use the App only for lawful and responsible purposes.</li>
+                <li>You will not misuse the App or attempt to disrupt its operation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><span>3.</span> IMAGE UPLOADS AND USER CONTENT</h2>
+            <p>You are solely responsible for the images and optional text context you submit through Scan &amp; Explain. You confirm that you have the legal right or permission to submit any image you upload.</p>
+            <p>You must not submit content that:</p>
+            <ul>
+                <li>Violates another person's privacy or legal rights</li>
+                <li>Infringes copyright, trademark, or intellectual-property rights</li>
+                <li>Contains illegal material or facilitates fraud, scams, or deception</li>
+                <li>Exploits, abuses, or harms children in any way</li>
+                <li>Contains malicious code or attempts to compromise our backend</li>
+                <li>Harasses, threatens, or abuses any individual</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><span>4.</span> DO NOT SUBMIT SENSITIVE INFORMATION</h2>
+            <p>Scan &amp; Explain is not a secure vault for confidential data. You must avoid uploading images containing passwords, OTPs, bank account or UPI details, payment cards, government IDs (such as Aadhaar, PAN, or passports), private conversations, confidential medical records with personal identifiers, or sensitive information about children.</p>
+            <p>Before each analysis, the App asks you to confirm that your image does not contain sensitive personal, financial, or banking information. You remain responsible for any image you choose to submit.</p>
+        </section>
+
+        <section>
+            <h2><span>5.</span> AI-GENERATED RESPONSES &amp; NO PROFESSIONAL ADVICE</h2>
+            <p>Scan &amp; Explain transmits your image through our Cloudflare Workers backend to third-party AI services to generate explanations. AI-generated responses may be inaccurate, incomplete, outdated, or misinterpret visual details.</p>
+            <p><strong>Scan &amp; Explain is not a substitute for qualified professional advice.</strong> Responses—including Medicine Check, Scam Check, and Document Summary—must <strong>not</strong> be treated as professional:</p>
+            <ul>
+                <li>Medical, pharmaceutical, or healthcare advice</li>
+                <li>Legal or regulatory advice</li>
+                <li>Financial, banking, or investment advice</li>
+                <li>Cybersecurity or fraud-verification guarantees</li>
+                <li>Emergency advice</li>
+            </ul>
+            <p>Always consult a qualified doctor or pharmacist before taking any medication, verify suspicious links or financial messages through official channels, and contact emergency services in an emergency.</p>
+        </section>
+
+        <section>
+            <h2><span>6.</span> ADVERTISING, REWARDED ADS &amp; SCAN CREDITS</h2>
+            <p>Scan &amp; Explain displays advertisements—including interstitial ads and optional rewarded ads—via <strong>Google AdMob</strong>. AdMob processes advertising-related data under Google's own privacy policies. We never sell your uploaded images to advertisers.</p>
+            <p>Users receive a daily allowance of free scans and may unlock additional scan credits (such as +5 scans) by completing an eligible rewarded ad. Reward availability depends on ad inventory, network connectivity, and ad provider policies, and is not guaranteed at all times.</p>
+            <p>You must not manipulate, automate, or fraudulently interact with ads to gain credits. We reserve the right to revoke credits or restrict access if abuse is detected.</p>
+        </section>
+
+        <section>
+            <h2><span>7.</span> FAIR USE &amp; PROHIBITED CONDUCT</h2>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Bypass daily scan limits or manipulate local storage to gain unlimited scans</li>
+                <li>Reverse engineer, decompile, or modify the App</li>
+                <li>Abuse, overload, or attempt unauthorized access to our Cloudflare Workers backend or APIs</li>
+                <li>Use automated bots or scripts to interact with the App</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><span>8.</span> CHILD SAFETY</h2>
+            <p>Scan &amp; Explain does not knowingly collect personal information from children. Any use of the App to process, generate, or facilitate child sexual exploitation or abuse (CSAE) is strictly prohibited and will result in immediate restriction and reporting where required by law.</p>
+        </section>
+
+        <section>
+            <h2><span>9.</span> PRIVACY</h2>
+            <p>Your use of Scan &amp; Explain is also governed by our Privacy Policy, which explains how images, local history, and AdMob data are handled:</p>
+            <p><strong>Privacy Policy:</strong> <a href="https://mahigohi.github.io/linscam/privacy" target="_blank" rel="noopener noreferrer">https://mahigohi.github.io/linscam/privacy</a></p>
+        </section>
+
+        <section>
+            <h2><span>10.</span> INTELLECTUAL PROPERTY</h2>
+            <p>You retain ownership of the images you upload. By submitting an image, you grant LINS IO and our necessary service providers a limited, temporary license to process that image solely to deliver the requested analysis.</p>
+            <p>The Scan &amp; Explain App, including its design, branding, logos, interface, and code, is owned by <strong>LINS IO</strong> and may not be copied, redistributed, or sold without permission.</p>
+        </section>
+
+        <section>
+            <h2><span>11.</span> AVAILABILITY, UPDATES &amp; TERMINATION</h2>
+            <p>We strive to keep the App running smoothly, but uninterrupted availability is not guaranteed due to maintenance, network issues, or third-party AI/AdMob outages. We may update features, scan limits, supported languages, or AI models at any time, and may suspend or restrict access if these Terms are violated.</p>
+        </section>
+
+        <section>
+            <h2><span>12.</span> DISCLAIMER &amp; LIMITATION OF LIABILITY</h2>
+            <p>Scan &amp; Explain is provided on an "as is" and "as available" basis without warranties of any kind. To the maximum extent permitted by applicable law, <strong>LINS IO</strong> shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App, reliance on AI-generated explanations, or third-party service interruptions.</p>
+        </section>
+
+        <section>
+            <h2><span>13.</span> GOVERNING LAW</h2>
+            <p>These Terms are governed by and construed in accordance with the laws of India, subject to any mandatory consumer-protection rights under applicable law.</p>
+        </section>
+
+        <section>
+            <h2><span>14.</span> CHANGES TO THESE TERMS</h2>
+            <p>We may update these Terms from time to time. Updated Terms will be posted on this page with a revised Effective Date. Continued use of the App after changes take effect constitutes your acceptance of the updated Terms.</p>
+        </section>
+
+        <section>
+            <h2><span>15.</span> CONTACT US</h2>
+            <p>If you have questions, feedback, or wish to report an issue or harmful AI output, contact us at:</p>
+            <div class="contact-box">
+                <p><strong>Developer / Organization:</strong> LINS IO</p>
+                <p><strong>App Name:</strong> Scan &amp; Explain (formerly LinsCam AI)</p>
+                <p><strong>Email:</strong> <a href="mailto:linsio.official@gmail.com">linsio.official@gmail.com</a></p>
+                <p><strong>Website:</strong> <a href="https://linsio.site" target="_blank" rel="noopener noreferrer">https://linsio.site</a></p>
+            </div>
+        </section>
     </div>
 
+    <footer>
+        <p>&copy; 2026 LINS IO. All rights reserved.</p>
+    </footer>
 </body>
 </html>
